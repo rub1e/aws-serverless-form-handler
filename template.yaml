@@ -39,7 +39,7 @@ Resources:
     Properties:
       CodeUri: submitFormFunction/
       Handler: app.handler
-      Runtime: nodejs16.x
+      Runtime: nodejs18.x
       MemorySize: 128
       Environment:
         Variables:
