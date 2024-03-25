@@ -29,7 +29,7 @@ exports.handler = async (event) => {
 
     try {
       // Send email and save to DynamoDB in parallel using Promise.all
-      await Promise.all([sendEmail(formData), saveFormData(formData)])
+      await Promise.all([saveFormData(formData)])
 
       return {
           statusCode: 200,
